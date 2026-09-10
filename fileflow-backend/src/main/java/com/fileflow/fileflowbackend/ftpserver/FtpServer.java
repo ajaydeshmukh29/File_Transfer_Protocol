@@ -4,20 +4,6 @@ import java.io.*;
 import java.net.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/**
- * Thread-per-client socket file server. This is the modernized version of the
- * original core-Java "Marvellous FTP Server" (program934) — same command set
- * and wire protocol (LIST / EXISTS / INFO / SIZE / GET / PUT / DELETE / RENAME / QUIT),
- * but:
- *   - bugs from the original fixed: `new file(...)` (wrong case, wouldn't compile),
- *     the undefined `fileName` variable in PUT (was using an out-of-scope `filname` typo),
- *     and streams/sockets that weren't guaranteed to close.
- *   - all file operations are scoped inside one storage directory instead of the
- *     process's working directory, and filenames are validated so a client can't
- *     escape that directory with "..", "/", or "\" (basic path-traversal protection).
- *   - runs in-process as part of the Spring Boot app (see FtpServerRunner) instead
- *     of needing to be started by hand as a second program.
- */
 public class FtpServer
 {
     private final int port;

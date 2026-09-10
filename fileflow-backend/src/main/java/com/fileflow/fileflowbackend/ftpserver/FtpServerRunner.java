@@ -9,8 +9,6 @@ import java.io.File;
 
 /**
  * Boots the socket-based FtpServer in a background daemon thread as soon as
- * the Spring app starts, so FtpService always has something to talk to on
- * localhost without a second process needing to be launched manually.
  */
 @Component
 public class FtpServerRunner implements ApplicationRunner

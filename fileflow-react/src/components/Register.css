@@ -1,0 +1,19 @@
+.login-text
+{
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+}
+
+.login-text span
+{
+  color: #243b55;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-text span:hover
+{
+  text-decoration: underline;
+}
+

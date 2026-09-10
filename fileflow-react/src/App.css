@@ -1,0 +1,148 @@
+body
+{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+}
+
+header
+{
+  background-color: #2563eb;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+header h1
+{
+  margin: 0;
+}
+
+header p 
+{
+  margin-bottom: 0;
+}
+
+main 
+{
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+h2
+{
+  color: #333;
+}
+
+.file-item
+{
+  background-color: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button
+{
+  padding: 8px 12px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover
+{
+  opacity: 0.6;
+}
+
+input[type="file"]
+{
+  margin: 10px 0 20px;
+}
+
+.file-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.download-btn,
+.rename-btn,
+.info-btn,
+.size-btn,
+.exists-btn,
+.delete-btn {
+  color: white;
+}
+
+.download-btn {
+  background-color: #018cf0b0;
+}
+
+.rename-btn {
+  background-color: #9333ea;
+}
+
+.info-btn {
+  background-color: #0891b2;
+}
+
+.size-btn {
+  background-color: #ca8a04;
+}
+
+.exists-btn {
+  background-color: #16a34a;
+}
+
+.delete-btn {
+  background-color: #dc2626;
+}
+
+.upload-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.upload-section h2 {
+  margin-top: 0;
+}
+
+.upload-section p {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+
+  main {
+    width: auto;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .file-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .file-actions {
+    width: 100%;
+  }
+
+  .file-actions button {
+    flex: 1;
+    margin: 0;
+  }
+
+  header {
+    padding: 20px 10px;
+  }
+}

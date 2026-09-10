@@ -40,7 +40,7 @@ public class FtpServer
         try (ServerSocket serverSocket = new ServerSocket(port))
         {
             System.out.println("-------------------------------------");
-            System.out.println("----- Marvellous FTP Server Started (port " + port + ") -----");
+            System.out.println("----- FTP Server Started (port " + port + ") -----");
             System.out.println("----- Storage directory: " + storageDir.getAbsolutePath() + " -----");
             System.out.println("-------------------------------------");
 

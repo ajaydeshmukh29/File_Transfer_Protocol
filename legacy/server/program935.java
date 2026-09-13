@@ -131,7 +131,7 @@ class program935
                 
                 }
 
-                // PUT B.txt (Upload)
+                // PUT
                 else if(operation.equals("PUT"))
                 {
                     if(parts.length != 2)

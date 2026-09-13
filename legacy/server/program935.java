@@ -5,7 +5,7 @@
 //    Technologly  : JavaScript | React | Java | Spring Boot
 //    Date         : 05/09/2026
 //    
-//    (Server side logci)
+//    (Server side logic)
 //////////////////////////////////////////////////////////////
 
 import java.io.*;

@@ -20,7 +20,7 @@ class program934
         try
         {
             System.out.println("-------------------------------------");
-            System.out.println("----- FTP Client Started -------");
+            System.out.println("-------- FTP Client Started -------");
             System.out.println("-------------------------------------");
 
             Socket socket = new Socket(

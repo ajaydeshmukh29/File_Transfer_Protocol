@@ -35,7 +35,6 @@ class program935
 
                 // Thread gets created for client
                 Thread t = new Thread(() -> HandleClientRequest(clientsocket));
-
                 t.start();
             } // End of while
         }
